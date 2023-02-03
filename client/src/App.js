@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import { useEffect, useState } from "react";
 import { ABI, ADDRESS } from "./contract/index";
 import { ethers } from "ethers";
@@ -8,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import MyProject from "./MyProject";
 import ProjectPage from "./ProjectPage";
-import { getGlobalState, setGlobalState, useGlobalState } from "./utils";
+import {  setGlobalState } from "./utils";
 
 function App() {
   const [contract, setContract] = useState({});

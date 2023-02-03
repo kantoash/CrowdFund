@@ -3,7 +3,6 @@ import ProjectsCard from "./components/ProjectsCard";
 import { useGlobalState } from "./utils";
 
 function MyProject({ contract }) {
-  const [connectedAccount] = useGlobalState("connectedAccount");
   const [myProjects, setMyProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -34,7 +33,7 @@ function MyProject({ contract }) {
       setLoading(false);
     };
     MyProjectLoader();
-  }, []);
+  }, [contract]);
 
 
   if (loading) {

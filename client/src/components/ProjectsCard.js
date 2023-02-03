@@ -21,7 +21,7 @@ function ProjectsCard({ project }) {
           src={`https://gateway.pinata.cloud/ipfs//${project?.imageURL.substring(
             7
           )}`}
-          alt="project Image"
+          alt="projectImage"
           className="rounded-xl h-64 object-cover w-full  "
         />
       </div>

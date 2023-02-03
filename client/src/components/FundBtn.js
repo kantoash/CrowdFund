@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useGlobalState, setGlobalState } from "../utils";
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ethers } from "ethers";
-import { ABI, ADDRESS } from "../contract";
-
 function FundBtn({ id, contract }) {
   return (
     <>

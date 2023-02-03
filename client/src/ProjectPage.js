@@ -37,7 +37,7 @@ function ProjectPage({ contract }) {
 
     };
     loadProject();
-  }, []);
+  }, [contract]);
 
   useEffect(() => {
     const loadFunders = async () => {
@@ -55,7 +55,7 @@ function ProjectPage({ contract }) {
       setLoading(false);
     };
     loadFunders();
-  }, []);
+  }, [contract]);
 
   const expired = new Date().getTime() > Number(project?.expiresAt + "000");
 
@@ -76,7 +76,7 @@ function ProjectPage({ contract }) {
       <div className="w-3/4 mx-auto mt-6 flex flex-row items-center space-x-10 justify-center ">
         <div className="flex-shrink-0">
           <img
-            alt="project image"
+            alt="projectImage"
             src={`https://gateway.pinata.cloud/ipfs//${project?.imageURL.substring(7)}`}
             className="h-40 md:h-52 lg:h-60 rounded-lg object-contain"
           />

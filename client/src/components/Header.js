@@ -1,8 +1,6 @@
 import React from "react";
 import { CircleStackIcon } from "@heroicons/react/24/outline";
-import { ethers } from "ethers";
 import { useNavigate } from "react-router";
-import { truncate } from "../utils/func";
 import { setGlobalState, useGlobalState } from "../utils";
 
 function Header({ account }) {
