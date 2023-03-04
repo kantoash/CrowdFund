@@ -79,7 +79,6 @@ function Home({ contract }) {
           Owner: <span className="text-base">{owner}</span>{" "}
         </h3>
         <h3>Create Fee {projectTax} ETH </h3>
-        <h3>Contract balance {balance} ETH</h3>{" "}
       </div>
       <div className=" mt-10 m-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10  ">
         {projects.map((project, id) => (

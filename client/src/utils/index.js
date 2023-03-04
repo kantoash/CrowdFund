@@ -23,6 +23,7 @@ export const daysRemaining = (days) => {
     days = days.diff(todaysDate, 'days')
     return days == 1 ? '1 day' : days + 'days'
 }
+
 export const truncate = (text, startChars, endChars, maxLength) => {
     if (text.length > maxLength) {
       let start = text.substring(0, startChars)

@@ -27,6 +27,7 @@ function FundTemplate({ id, contract }) {
     const FundTxn = 
     await contract.contribution(id, {value: ethers.utils.parseUnits(fundAmt.toString(), "ether")})
     await FundTxn.wait()
+    setGlobalState('fundProject', 'scale-0')
   }
 
   return (
